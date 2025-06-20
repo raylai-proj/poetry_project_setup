@@ -1,0 +1,23 @@
+[project]
+name = "poetry-project-setup"
+version = "0.1.0"
+description = "poetry project setup practice"
+authors = [
+    {name = "raylai",email = "chunjueilai@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "pre-commit (>=4.2.0,<5.0.0)",
+    "conventional-commit (>=0.4.2,<0.5.0)",
+    "flake8 (>=7.2.0,<8.0.0)",
+    "isort (>=6.0.1,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "poetry_project_setup", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
